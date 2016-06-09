@@ -16,7 +16,7 @@ var clockPage = {
       var backgroundColor = randomHex();
 
       $('*').css('background-color',backgroundColor);
-    },50)
+    },1000)
   },
 
   timing: function() {
