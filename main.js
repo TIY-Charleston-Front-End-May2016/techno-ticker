@@ -13,7 +13,10 @@ var clockPage = {
   init: function() {
     setInterval(function() {
       clockPage.timing()
-    },1000)
+      var backgroundColor = randomHex();
+
+      $('*').css('background-color',backgroundColor);
+    },50)
   },
 
   timing: function() {
